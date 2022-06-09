@@ -1,0 +1,360 @@
+/* MENU */
+
+.close-menu {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.199);
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    color: rgb(4, 26, 58);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.menu-content nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-content nav ul li {
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    white-space: nowrap;
+}
+
+.menu-content nav ul li::after {
+    content: "";
+    position: absolute;
+    height: 0.3rem;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    background: aquamarine;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li:hover::after{
+    width: 100%;
+    left: 0;
+}
+ 
+.logo {
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+/* END MENU */
+/* INTRO */
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 6rem 2rem;
+}
+
+.intro-text-content, .intro-img-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.intro-text-content h1 {
+    font-size: 4rem;
+}
+
+.intro-text-content p {
+    font-size: 1.5rem;
+}
+
+/* END INTRO */
+/* STORY */
+
+.story-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.story-content h1 {
+    font-size: 4rem;
+}
+
+
+.story-content h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.story-content h2 span {
+    font-size: 2rem;
+}
+
+.story-content p {
+    margin-top: 2rem;
+    text-align: justify;
+    font: 1.5rem;
+    color: black;
+}
+
+/* END STORY */
+/* HABILITIES */
+
+.habilities-content {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+}
+
+.habilities-content h1 {
+    font-size: 5rem;
+}
+
+.grid-tecnology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 4rem;  
+}
+
+.grid-tecnology ul, .grid-tecnology ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.grid-tecnology ul li {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+
+.grid-tecnology img {
+    max-width: 6.5rem;
+    height: 5rem;
+}
+
+.grid-tecnology h2 {
+    font-size: 4rem;
+    color: aquamarine;
+}
+
+.grid-tecnology article > p {
+    padding-top: 2.5rem;
+    font-size: 1.8rem;
+}
+
+.text-grid-tecnology {
+    text-align: justify;
+}
+
+/* END HABILITIES */
+/* EXPERIENCE AND ACADEMIC  */
+
+.experience-and-academic {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 6rem 2rem;
+}
+
+.experience-and-academic h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.grid-experience {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.grid-experience h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.grid-experience h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.grid-experience p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formation {
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-image: url(../img/endless-constellation.svg);
+}
+
+.courses {
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.formation li, .courses li {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(206, 203, 203);
+    padding: 0.5rem;
+}
+
+.courses li {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.experience-and-academic div span {
+    display: inline-flex;
+    padding-left: 0.5rem;
+    color: rgb(102, 101, 101);
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.courses li img {
+    max-width: 8.5rem;
+    height: auto;
+    padding-right: 2rem;
+}
+
+/* END EXPERIENCE AND ACADEMIA */
+/* CONTACT */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6rem 2rem;
+    gap: 2rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-img-content img{
+    max-width: 85%;
+    height: auto;
+}
+
+.contact-text-content, .contact-img-content, .contact-form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.contact-text-content h1 {
+    font-size: 4rem;
+}
+
+.contact-text-content p {
+    font-size: 2rem;
+}
+
+.grid-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    border: none;
+}
+
+.grid-form legend {
+    font-size: 1.5rem;
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.form-group {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 41rem;
+}
+
+.form-group label {
+    display: block;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group input, .form-group textarea{
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.form-group button {
+    border: 0.5rem solid white;
+    background: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border-radius: 1rem;
+}
+
+.form-group button:hover {
+    border: 0.5rem solid white;
+    background: white;
+    color: aquamarine;
+}
+
+.full-width {
+    flex-basis: 100%;
+}   
+
+/* END CONTACT */
+/* RODAPÉ */
+
+.footer {
+    text-align: center;
+    padding: 0.2rem 2rem;
+    color: gray;
+    font-size: 2rem;
+}
+
+/* FIM DO RODAPÉ */
+
+.to-top {
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    border-radius: 50%;
+    background:rgba(0, 0, 0, 0.199);
+    align-items: center;
+    justify-content: center;
+}

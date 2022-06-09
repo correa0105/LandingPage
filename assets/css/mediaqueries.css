@@ -1,0 +1,88 @@
+@media (max-width: 800px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        padding: 6rem 2rem 4rem 2rem;
+    }
+    .intro-text-content h1 {
+        font-size: 3rem;
+    }
+    .habilities-content h1 {
+        font-size: 4rem;
+    }    
+    .grid-tecnology {
+        grid-template-columns: 1fr;
+    }
+    .experience-and-academic h1 {
+        font-size: 4rem;
+    }
+    .grid-experience h2 {
+        font-size: 2rem;
+    }
+    .formation li {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .courses li {
+        font-size: 1.5rem;
+    }
+    .courses li span {
+        display: none;
+    }
+    .contact-content {
+        grid-template-columns: 1fr;
+    } 
+    .contact-form {
+    grid-column: span 1;
+    }
+
+    /* MENU */
+    .menu {
+        display: none;
+        height: 100%;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu-content, .menu-content nav ul {
+        flex-direction: column;
+    }
+
+    .menu-content nav {
+        padding-top: 2rem;
+    }
+
+    .menu-content {
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .close-menu-label::after {
+        content: "☰";
+        position: fixed;
+        padding-bottom: 0.5rem;
+        width: 3rem;
+        height: auto;
+        right: 1rem;
+        top: 1rem;
+        text-align: center;
+        justify-content: center;
+        z-index: 2;
+        background: rgb(5, 20, 88);
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: "✕";
+        padding-bottom: 0.25rem;
+        padding-top: 0.25rem;
+    }
+    /* END MENU */
+
+}

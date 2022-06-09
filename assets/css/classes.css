@@ -1,0 +1,28 @@
+.background-img {
+    background-image: url(../img/endless-constellation.svg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.background-white {
+    background: white;
+    color: rgb(4, 26, 58);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
