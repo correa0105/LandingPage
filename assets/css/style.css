@@ -84,6 +84,48 @@
 }
 
 /* END INTRO */
+
+/* SLIDER */
+
+.slider {
+    overflow: hidden;
+    height: 60rem;
+}
+
+.containerImgs {
+    display: flex;
+    height: 100%;
+    transition: all ease 2s;
+}
+
+.imgSlider {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.sliderControls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: inherit;
+    padding: 0 6rem;
+    align-items: center;
+}
+
+.backSlider, .nextSlider {
+    cursor: pointer;
+    color: black;
+    font-size: 4rem;
+    background-color: rgba(170, 168, 168, 0.288);
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+/* END SLIDER */
+
 /* STORY */
 
 .story-content {
