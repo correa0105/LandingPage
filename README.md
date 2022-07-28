@@ -2,6 +2,8 @@ OBS: Esse é meu primeiro README, perdão pelo amadorismo haha!
 
 # Landing Page CSS Puro
 
+<img src="./assets/exemplo.png" alt="Exemplo do Projeto">
+
 Este é uma Landing Page simples, feita apenas com CSS, ela tem como objetivo maior o aprendizado.
 
 # Caracteristicas da Landing Page
